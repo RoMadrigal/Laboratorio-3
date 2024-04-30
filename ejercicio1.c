@@ -9,9 +9,9 @@ int main(){
 
     for (int i=1; i<=100; i++)
     {
-        numeroT +=1;
+        numeroT +=i;
 
-        printf("%d", numeroT);
+        printf("%d, ", numeroT);
     }
 
 
