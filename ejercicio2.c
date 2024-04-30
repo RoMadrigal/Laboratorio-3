@@ -10,7 +10,7 @@ int factorial (int n) {
 
     while (n>1) {
         i=i*n;
-        int n=n-1;
+        n=n-1;
     }
 
 
