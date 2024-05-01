@@ -20,17 +20,20 @@ int factorial (int n) {
 
 
 
-int main (int argc, char *argv[]){
+int main (){
 
+    int n ;
 
-    int fac4=factorial(4);
-    int fac5=factorial(5);
+    printf("Ingrese el numero del que desea calcular su factorial: ") ;
 
+    scanf("%d", & n) ;
 
-    printf("4!=%d, 5!=%d\n", fac4, fac5);
+    int fac=factorial(n) ;
 
+    printf("El factorial del numero ingresado es: %d! = %d\n", n,fac);
 
-    return 0;
+    return 0 ;
+
 }
 
 
