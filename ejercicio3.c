@@ -37,5 +37,18 @@ int findLargestSquare(int matrix[][MAX_SIZE], int size) {
 
 
 
+int main() {
+    int size;
+    int matrix[MAX_SIZE][MAX_SIZE];
+
+
+    printf("Ingrese el numero de filas de la matriz nxn (admite valores entre 1 y 10): ");
+    scanf("%d", &size);
+
+
+    if (size < 1 || size > 10) {
+        printf("Tamano no valido. Se utilizara el tamano predeterminado de 5x5.\n");
+        size = 5;
+    }
 
 
