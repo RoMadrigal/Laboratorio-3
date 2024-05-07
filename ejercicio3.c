@@ -52,3 +52,23 @@ int main() {
     }
 
 
+    printf("La matriz utilizada corresponde a:\n");
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            matrix[i][j] = rand() % 2;
+            printf("%d ", matrix[i][j]);
+        }
+        printf("\n");
+    }
+
+
+    int largestSquareSize = findLargestSquare(matrix, size);
+
+
+    printf("El tamano del cuadrado mas grande de unos es: %dx%d.\n", largestSquareSize, largestSquareSize);
+
+
+    return 0;
+}
+
+
